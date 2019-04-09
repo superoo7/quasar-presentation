@@ -1,5 +1,11 @@
 # quasar-presentation
 
+Presentation about Quasar Framework, build with Vue, Quasar Framework and Reveal.js.
+
+## License
+
+MIT
+
 ## Project setup
 ```
 npm install
