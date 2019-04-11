@@ -2,7 +2,7 @@
   <section data-background-image="img/quasar-cover.jpg">
     <div class="box">
       <h3>Build a full front end stack with Quasar Framework and Vue</h3>
-      <img data-src="img/logo.png" class="image-none" />
+      <img data-src="img/cg_quasar.svg" class="image-none gecko-quasar" />
       <h5>Johnson Lai</h5>
     </div>
   </section>
@@ -15,14 +15,11 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.box {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 25px;
+.reveal .gecko-quasar {
+  height: 400px;
 }
 
-.image-none {
-  border: none;
-  background: transparent;
-  box-shadow: none;
+.reveal .gecko-quasar path {
+outline: 3px solid green;
 }
 </style>

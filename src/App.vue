@@ -28,7 +28,9 @@ export default {
     };
   },
   mounted() {
-    Reveal.initialize();
+    Reveal.initialize({
+      history: true
+    });
   }
 };
 </script>
