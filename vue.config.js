@@ -4,5 +4,8 @@ module.exports = {
       treeShake: true
     }
   },
-  transpileDependencies: [/[\\\/]node_modules[\\\/]quasar[\\\/]/]
+  transpileDependencies: [/[\\\/]node_modules[\\\/]quasar[\\\/]/],
+  configureWebpack: {
+    devtool: 'source-map'
+  }
 };

@@ -16,7 +16,7 @@ export default {
 
 <style lang="stylus" scoped>
 .reveal .gecko-quasar {
-  height: 400px;
+  height: 350px;
 }
 
 .reveal .gecko-quasar path {
