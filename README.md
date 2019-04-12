@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ba452b54-9fa8-41ed-8df9-4b77f4841298/deploy-status)](https://app.netlify.com/sites/quasarf/deploys)
 
-[Quasar Presentation](https://quasarf.netlify.com/)
+[Quasar Presentation](https://quasar.wenghan.me)
 
 Presentation about Quasar Framework, build with Vue, Quasar Framework and Reveal.js.
 
@@ -10,7 +10,10 @@ Presentation about Quasar Framework, build with Vue, Quasar Framework and Reveal
 
 MIT
 
-## Project setup
+
+## How to Setup
+
+### Project setup
 ```
 npm install
 ```
