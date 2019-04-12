@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h5>NFTGecko</h5>
+    <h3>NFTGecko</h3>
     <img data-src="img/nftgecko.png" />
     <div class="row justify-around">
       <a

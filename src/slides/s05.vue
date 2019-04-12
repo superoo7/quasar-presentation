@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h5>My Personal Portfolio</h5>
+    <h3>My Personal Portfolio</h3>
     <img data-src="img/portfoliov2.png" />
     <a
       class="link"

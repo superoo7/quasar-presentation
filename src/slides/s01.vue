@@ -4,7 +4,7 @@
       <h3>Build a full front end stack with Quasar Framework and Vue</h3>
       <img data-src="img/cg_quasar.svg" class="gecko-quasar" />
       <h5>Johnson Lai</h5>
-      <span style="font-size: 16px">
+      <span>
         Slides:
         <a
           href="https://quasar.wenghan.me"

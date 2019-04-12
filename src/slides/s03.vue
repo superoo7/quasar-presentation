@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>About Me</h2>
+    <h3>About Me</h3>
     <div class="flex justify-center cg-my-2">
       <q-avatar size="100px" class="cg-mx-2">
         <img data-src="img/profile.png" />
