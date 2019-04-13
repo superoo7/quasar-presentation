@@ -1,14 +1,24 @@
 <template>
   <section>
-    <h3>My Personal Portfolio</h3>
-    <img data-src="img/portfoliov2.png" />
-    <a
-      class="link"
-      href="https://wenghan.me?q=kljs"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      wenghan.me
-    </a>
+    <h3>NFTGecko</h3>
+    <img data-src="img/nftgecko.png" />
+    <div class="row justify-around">
+      <a
+        class="link"
+        href="https://github.com/coingecko/nftgecko"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+      <a
+        class="link"
+        href="https://coingecko.github.io/nftgecko/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Reports
+      </a>
+    </div>
   </section>
 </template>

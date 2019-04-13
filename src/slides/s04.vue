@@ -1,32 +1,17 @@
 <template>
-  <section>
-    <h3>NFTGecko</h3>
-    <img data-src="img/nftgecko.png" />
-    <div class="row justify-around">
-      <a
-        class="link"
-        href="https://github.com/coingecko/nftgecko"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GitHub
-      </a>
-      <a
-        class="link"
-        href="https://coingecko.github.io/nftgecko/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Reports
-      </a>
+  <section data-background-image="img/quasar-cover.jpg">
+    <div class="box">
+      <h3>Agenda</h3>
+      <ul>
+        <li class="fragment">What is Quasar Framework?</li>
+        <li class="fragment">
+          Quasar Framework in Web, Mobile & Desktop
+        </li>
+        <li class="fragment">
+          Testing and Code Quality check with Quasar Framework
+        </li>
+        <li class="fragment">Use Case</li>
+      </ul>
     </div>
   </section>
 </template>
-
-<script>
-export default {
-  name: "s04"
-};
-</script>
-
-<style></style>

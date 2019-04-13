@@ -21,7 +21,10 @@ import {
   QItemLabel,
   QAvatar,
   QCard,
-  QCardSection
+  QCardSection,
+  QBar,
+  Notify,
+  Meta
 } from "quasar";
 
 Vue.use(Quasar, {
@@ -42,10 +45,11 @@ Vue.use(Quasar, {
     QItemLabel,
     QAvatar,
     QCard,
-    QCardSection
+    QCardSection,
+    QBar
   },
   directives: {},
-  plugins: {}
+  plugins: { Notify, Meta }
 });
 
 Vue.config.productionTip = false;
