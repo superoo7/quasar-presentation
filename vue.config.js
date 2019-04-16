@@ -1,3 +1,5 @@
+// const CopyWebpackPlugin = require("copy-webpack-plugin");
+
 module.exports = {
   pluginOptions: {
     quasar: {
@@ -6,6 +8,6 @@ module.exports = {
   },
   transpileDependencies: [/[\\\/]node_modules[\\\/]quasar[\\\/]/],
   configureWebpack: {
-    devtool: 'source-map'
+    devtool: "source-map",
   }
 };

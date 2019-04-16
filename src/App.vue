@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    script
     <div class="reveal">
       <div class="slides">
         <template v-for="(s, key) in slides">
@@ -27,10 +28,11 @@ export default {
       slides
     };
   },
-  mounted() {
+  async mounted() {
     Reveal.initialize({
       history: true
     });
+    window.hljs.initHighlightingOnLoad();
   }
 };
 </script>

@@ -1,23 +1,25 @@
 <template>
   <div class="fullWidth" ref="wrapper">
-    <q-bar class="terminal-header" @click="copy">
+    <q-bar @click="copy" class="terminal-header">
       <q-btn dense flat round icon="lens" size="8.5px" color="red"></q-btn>
       <q-btn dense flat round icon="lens" size="8.5px" color="yellow"></q-btn>
       <q-btn dense flat round icon="lens" size="8.5px" color="green"></q-btn>
-      <div class="col text-center text-weight-bold">
-        {{ title }}
-      </div>
+      <div class="col text-center text-weight-bold">{{ title }}</div>
     </q-bar>
     <div class="bg-black terminal-field row" @click="copy">
-      <span class="col-12 text-grey">{{ comment }}</span>
-      <span class="col-1 text-purple cg-pr-1">$</span>
-      <div class="col-11">
+      <span v-if="comment !== ''" class="col-12 text-grey">{{ comment }}</span>
+      <span v-if="enableCopy" class="col-1 text-purple cg-pr-1">$</span>
+      <div :class="enableCopy ? 'col-11' : 'col-12'">
         <input
+          v-if="enableCopy"
           ref="terminal"
           readonly
           class="full-width terminal-input"
           :value="description"
         />
+        <pre v-else>
+          <code class="hljs">{{description}}</code>
+        </pre>
       </div>
     </div>
   </div>
@@ -37,10 +39,15 @@ export default {
     comment: {
       type: String,
       default: ""
+    },
+    enableCopy: {
+      type: Boolean,
+      default: true
     }
   },
   methods: {
     copy() {
+      if (!this.enableCopy) return;
       this.$refs.terminal.select();
       document.execCommand("copy");
       this.$q.notify("Copied!");
@@ -52,10 +59,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.terminal-header {
-  border-radius: 2% 2% 0 0;
-}
-
 .terminal-field {
   padding: 30px;
   text-align: left;
