@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    script
     <div class="reveal">
       <div class="slides">
         <template v-for="(s, key) in slides">

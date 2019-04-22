@@ -2,7 +2,14 @@
   <section>
     <section>
       <h2>DEMO</h2>
-      <p>SPA, PWA, SSR, Desktop, Mobile</p>
+      <p>Testing with Jest and Cypress</p>
+      <p>Lighthouse, Snyk and more</p>
+      <a
+        href="https://github.com/quasarframework/quasar-testing"
+        target="_blank"
+        rel="noopener noreferrer"
+        >quasarframework/quasar-testing</a
+      >
     </section>
     <section v-for="(d, key) in demo" :key="key">
       <h2>{{ d.header }}</h2>
@@ -10,6 +17,7 @@
         :title="d.title"
         :comment="d.comment"
         :description="d.description"
+        :highlight="d.highlight"
       />
     </section>
   </section>
@@ -17,63 +25,46 @@
 
 <script>
 import TerminalVue from "../components/Terminal.vue";
+
 export default {
+  components: {
+    terminal: TerminalVue
+  },
   data() {
     return {
       demo: [
         {
-          header: "Install Quasar Framework",
-          title: "install",
-          comment: "# Node.js >= 8.9.0 is required.",
-          description: "npm install -g @quasar/cli"
+          header: "Setup testing extension",
+          title: "Setup testing",
+          comment: "# setup quasar-testing",
+          description: "quasar ext add @quasar/testing",
+          highlight: false
         },
         {
-          header: "Create Project",
-          title: "create",
-          comment: "# Create Project (for v1 onwards)",
-          description: "quasar create newproject -b dev"
+          header: "Testing Vue SFC",
+          title: "Write some test",
+          comment: "# Snapshot testing with Jest",
+          description: `<test lang="jest">
+  import SomeVueComponent from "../SomeVueComponent.vue";
+  import { mount } from "@vue/test-utils";
+  describe("test vue component", () => {
+    it("snapshot vue component", () => {
+      const vueEl = mount(SomeVueComponent);
+      expect(vueEl.html()).toMatchSnapshot();
+    })
+  })
+</test>`,
+          highlight: true
         },
         {
-          header: "Progressive Web App",
-          title: "PWA",
-          comment: "# Add PWA",
-          description: "quasar mode add pwa"
-        },
-        {
-          header: "Server Side Rendering",
-          title: "SSR",
-          comment: "# Add SSR",
-          description: "quasar mode add ssr"
-        },
-        {
-          header: "Desktop App",
-          title: "desktop",
-          comment: "# Add Desktop",
-          description: "quasar mode add electron"
-        },
-        {
-          header: "Mobile App Setup",
-          title: "mobile",
-          comment: "# Mobile (Make sure cordova installed)",
-          description: "quasar mode add cordova"
-        },
-        {
-          header: "Android Setup",
-          title: "android",
-          comment: "# Android",
-          description: "cordova platform add android"
-        },
-        {
-          header: "iOS Setup",
-          title: "iOS",
-          comment: "# iOS",
-          description: "cordova platform add ios"
+          header: "Run Jest testing command",
+          title: "Jest",
+          comment: "",
+          description: "quasar test --unit jest --dev",
+          highlight: false
         }
       ]
     };
-  },
-  components: {
-    terminal: TerminalVue
   }
 };
 </script>
