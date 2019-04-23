@@ -7,11 +7,11 @@
       <span>
         Slides:
         <a
-          href="https://quasar.wenghan.me"
+          href="https://quasar.superoo7.com"
           target="_blank"
           rel="noopener noreferrer"
           class="link"
-          >quasar.wenghan.me</a
+          >quasar.superoo7.com</a
         >
       </span>
     </div>
