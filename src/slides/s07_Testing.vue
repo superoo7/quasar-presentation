@@ -30,7 +30,7 @@
       <img data-src="img/quasartesting.png" />
       <ul>
         <li class="fragment">Unit Testing</li>
-        <li class="fragment">Intergration Testing</li>
+        <li class="fragment">Integration Testing</li>
         <li class="fragment">End-To-End Testing</li>
         <li class="fragment">Quality Auditing</li>
       </ul>
