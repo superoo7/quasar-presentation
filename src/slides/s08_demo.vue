@@ -62,6 +62,13 @@ export default {
           comment: "",
           description: "quasar test --unit jest --dev",
           highlight: false
+        },
+        {
+          header: "E2E testing with Cypress",
+          title: "cypress",
+          comment: "",
+          description: "",
+          highlight: false
         }
       ]
     };

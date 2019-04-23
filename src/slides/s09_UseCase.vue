@@ -1,7 +1,9 @@
 <template>
-  <section>
+  <section data-background-image="img/quasar-cover.jpg">
     <section>
-      <h3>Use Case</h3>
+      <div class="box">
+        <h3>Use Case</h3>
+      </div>
     </section>
     <section>
       <div class="box">

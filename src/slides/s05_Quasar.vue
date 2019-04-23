@@ -26,43 +26,39 @@
       </div>
     </section>
     <section>
-      <div class="row justify-center items-center cg-pb-3">
-        <img width="80" class="cg-px-2" data-src="img/quasar.png" />
+      <div style="height:60px;" class="row justify-center item-center cg-pb-3">
+        <img class="cg-px-2" data-src="img/quasar.png" />
         <h5 class="cg-px-2">What is Quasar Framework?</h5>
+        <img data-src="img/vue.svg" />
       </div>
 
-      <q-card class="fragment bg-teal-10 cg-px-4 cg-py-2 cg-mt-2">
-        <q-card-section>
-          <p>
-            Quasar Framework is a framework build on top of Vue.js
-            <img style="height:60px;" data-src="img/vue.svg" />
-            , that allows you to build
-            <span class="fragment">Modern Website (SPA, PWA, SSR), </span>
-            <span class="fragment">Mobile App (iOS, Android), </span>
-            <span class="fragment"
-              >and Desktop App (Windows, MacOS, Linux)</span
-            >
-          </p>
-        </q-card-section>
-      </q-card>
+      <ul>
+        <li class="fragment">Framework</li>
+        <li class="fragment">CLI</li>
+        <li class="fragment">UI Library</li>
+      </ul>
     </section>
     <section>
-      <q-card class="bg-teal-10 cg-px-4 cg-py-2 cg-mt-2">
-        <q-card-section>
-          <p>Quasar Framework also provide</p>
-          <ul>
-            <li class="fragment">CLI tools</li>
-            <li class="fragment">Build tool</li>
-            <li class="fragment">UI Library</li>
-          </ul>
-        </q-card-section>
-      </q-card>
+      <div style="height:60px;" class="row justify-center item-center cg-pb-3">
+        <img class="cg-px-2" data-src="img/quasar.png" />
+        <h5 class="cg-px-2">What is Quasar Framework?</h5>
+        <img data-src="img/vue.svg" />
+      </div>
+      <div class="fragment box cg-px-4 cg-py-2 cg-mt-2">
+        <p>
+          Quasar Framework is a framework build on top of Vue.js , that allows
+          you to build
+          <span class="fragment">Modern Website (SPA, PWA, SSR), </span>
+          <span class="fragment">Mobile App (iOS, Android), </span>
+          <span class="fragment">and Desktop App (Windows, MacOS, Linux)</span>
+        </p>
+      </div>
     </section>
     <section>
       <h5>Web</h5>
       <div class="row">
         <q-card
-          class="fragment bg-teal-10 cg-px-4 cg-mt-2 col-12"
+          class="fragment bg-grey-8 cg-px-4 cg-mt-2 col-12"
           v-for="w in web"
           :key="w.id"
         >
@@ -81,7 +77,7 @@
       <img style="height:300px;" class="fragment" data-src="img/cordova.png" />
       <div class="row">
         <div class="fragment col-6 cg-px-2" v-for="m in mobile" :key="m.name">
-          <q-card class="bg-teal-10 cg-px-4 cg-mt-2">
+          <q-card class="bg-grey-8 cg-px-4 cg-mt-2">
             <q-card-section>
               <q-icon :name="m.icon" />
               <h5>
@@ -97,7 +93,7 @@
       <img style="height:300px;" class="fragment" data-src="img/electron.svg" />
       <div class="row justify-center">
         <div class="fragment col-6 cg-px-2" v-for="d in desktop" :key="d.name">
-          <q-card class="bg-teal-10 cg-px-4 cg-mt-2">
+          <q-card class="bg-grey-8 cg-px-4 cg-mt-2">
             <q-card-section>
               <q-icon :name="d.icon" />
               <h5>
