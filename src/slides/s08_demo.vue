@@ -66,8 +66,23 @@ export default {
         {
           header: "E2E testing with Cypress",
           title: "cypress",
-          comment: "",
-          description: "",
+          comment: "# Cypress testing",
+          description: "yarn test:e2e:CI",
+          highlight: false
+        },
+        {
+          header: "Snyk audit",
+          title: "snyk",
+          comment: "# Snyk Audit",
+          description: "npx snyk test --json",
+          highlight: false
+        },
+        {
+          header: "Lighthouse",
+          title: "lighthouse",
+          comment: "# Lighthouse PWA test",
+          description:
+            "npx lighthouse https://nft-manager.netlify.com view --output-path=./docs/lighthouse/index.html --config-path=./test/lighthouse/configs/full-config.js",
           highlight: false
         }
       ]

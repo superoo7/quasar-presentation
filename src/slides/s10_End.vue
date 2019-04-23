@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section data-background-image="img/quasar-cover.jpg">
     <section>
       <div class="box">
         <h3>The End</h3>
